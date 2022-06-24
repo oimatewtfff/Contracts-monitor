@@ -22,19 +22,24 @@
 * BeautifulSoup4 (для парсинга xml страницы с курсами валют)
 #### Для web-приложения
 * Django (backend)
-* React (frontend)
 * Djnago Rest Framework (для связи backend'a и frontend'a)
 * drf-yasg
 * django-cors-headers
+* React (frontend)
+* react-bootstrap (стилистика)
+* recharts (график)
 
 ### Ссылка на Google table с выданым доступом
-```sh
-https://docs.google.com/spreadsheets/d/1N6wLleVKbIJKK1uYm4aV0gT0q03RRwbGwmnUaPHgspY/edit?usp=sharing
+[Google table](https://docs.google.com/spreadsheets/d/1N6wLleVKbIJKK1uYm4aV0gT0q03RRwbGwmnUaPHgspY/edit?usp=sharing)
 
-```
+
 ### Зависимости
-- Список необходимых библиотек находится в файле requirements.txt
-- Так-же должены быть установлены Node.js не ниже версии 14.0.0 и npm не ниже версии 5.6
+- Список необходимых библиотек находится в файле requirements.txt и frontend/package.json
+- Так-же должены быть установлены Python 3.10, Node.js не ниже версии 14.0.0 и npm не ниже версии 5.6
+```sh
+pip install -r requirements.txt # в созданном виртуальном окружении
+npm install # в дирректории frontend
+```
 
 ### Настройки
 Для корректного подключения к локальной базе данных PostgreSQL, необходимо в файле app/config.py указать свои значения для переменных db_name,db_user,db_password,db_host,db_port. В случае изменения предустановленных параметов базы данных, продублировать эти изменения для DATABASES в kanalservis/kanalservis/settings.py
@@ -45,7 +50,7 @@ https://docs.google.com/spreadsheets/d/1N6wLleVKbIJKK1uYm4aV0gT0q03RRwbGwmnUaPHg
 python __init__.py
 
 ```
-* в директории app
+* в директории script
 
 # Запуск Веб-приложения
 
@@ -53,12 +58,12 @@ python __init__.py
 python manage.py runserver
 
 ```
-* в директории kanalservis_backend с активироанным виртуальным окружением (venv)
+* в директории backend с активироанным виртуальным окружением (venv)
 
 ```sh
 npm start
 
 ```
-* в директории kanalservis_frontend
+* в директории frontend
 
 
