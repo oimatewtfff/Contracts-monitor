@@ -37,7 +37,7 @@ const App = () => {
                 <Col>
                     <Graphic contracts={contracts} />
                 </Col>
-                <Col md="auto">
+                <Col >
                     <CardTotal total={Total} />
                     <TTable contracts={contracts} />
                 </Col>
